@@ -1,2 +1,0 @@
-# MyBlogBasics
-MyBlogBasics
