@@ -121,7 +121,11 @@
       </div>
       <div class="bottom-info">Slide UP</div>
     </div>
-    <i class="fa fa-arrow-right togglePic"  @click="togglePic" v-if="togglePicsOne"></i>
+    <i
+      class="fa fa-arrow-right togglePic"
+      @click="togglePic"
+      v-if="togglePicsOne"
+    ></i>
     <!-- 备案号 -->
     <a
       class="record_number"
@@ -172,7 +176,7 @@ export default {
       imgUrl: "",
       centerShow: false, // 导航抽屉显示状态
       imgLoded: false, // 背景图片加载状态
-      togglePicsOne:false
+      togglePicsOne: false,
     };
   },
   components: {
@@ -186,10 +190,10 @@ export default {
   methods: {
     hitokoto() {
       axios
-        .get(this.$api.yiyan + `?c=d&c=e&c=f&c=g&c=h&c=i&c=l&c=j&c=k`)
+       .get(this.$api.yiyan + `?c=d&c=e&c=f&c=g&c=h&c=i&c=l&c=j&c=k`)
         .then((res) => {
           const data = res.hitokoto;
-          this.slogan = data;
+           this.slogan = data;
         })
         .catch((err) => {
           console.log(err);
@@ -267,9 +271,9 @@ export default {
       img.src = this.imgUrls[randomNum(0, this.imgUrls.length - 1)];
       img.onload = () => {
         this.imgLoded = true;
-        setTimeout(()=>{
-          this.togglePicsOne=true
-        },1000)
+        setTimeout(() => {
+          this.togglePicsOne = true;
+        }, 1000);
       };
     },
     togglePicOne() {
@@ -280,7 +284,7 @@ export default {
     this.getNowDate();
   },
   mounted() {
-    document.title = this.$config.BLOG_NAME ;
+    document.title = this.$config.BLOG_NAME;
     this.isMobile();
     setTimeout(() => {
       this.flag = true;
@@ -347,7 +351,7 @@ export default {
       .Q_logo {
         height: 3rem;
         position: absolute;
-        border-radius:100%;
+        border-radius: 100%;
         transform: translate(-50%, -50%);
         transition: all 1s;
         top: 0px;
@@ -466,8 +470,8 @@ export default {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    font-size:1.3rem;
-    color:#49b1f5;
+    font-size: 1.3rem;
+    color: #49b1f5;
   }
   .record_number {
     width: 100%;

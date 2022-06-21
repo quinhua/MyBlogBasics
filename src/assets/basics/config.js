@@ -7,7 +7,7 @@ const BLOG_NAME = "欢迎访问钱辉的博客"; // 个人网站名字
 const DESIGNED="钱辉";
 
 const BASICS_LOGO = "https://cdn.jsdelivr.net/gh/qianhuiya/pics@main/kavaer/1.3o4ilcabcrq0.png" //引导页默认LOGO,此项添加需将下一项置为空,本地照片引用require
-const LOGO_CENTER = "https://s1.ax1x.com/2022/06/06/X0xj7d.png"; //更换引导页LOGO
+const LOGO_CENTER = "https://s1.ax1x.com/2022/06/08/XrZN8O.png"; //更换引导页LOGO
 
 //  已有图标库@mdi/font&font-awesome,如若找不到所要的图标,推荐iconfont阿里巴巴矢量图标库
 const LOGO_TOP_RIGHT = [    //右上角图标链接，留空不显示
@@ -156,6 +156,13 @@ const PAGES_DATA = [
     subtitle: "Carbon",
     url: "https://carbon.now.sh/",
     icon: "https://s1.ax1x.com/2022/06/06/XB9EHe.png",
+  },{
+    pageId: 13,
+    sortId: 1,
+    title: "pandownload",
+    subtitle: "Pandownload",
+    url: "https://pandownload.net/index.html",
+    icon: "https://s1.ax1x.com/2022/06/07/XD7xfO.png",
   },
   {
     pageId: 1,
@@ -163,7 +170,7 @@ const PAGES_DATA = [
     title: "Github",
     subtitle: `Github`,
     url: "https://github.com/qianhuiya",
-    icon: "https://z3.ax1x.com/2021/06/21/REjuqS.png",
+    icon: "https://z3.ax1x.com/2021/06/21/REjmKf.png",
   },
   {
     pageId: 2,
